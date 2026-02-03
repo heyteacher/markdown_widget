@@ -65,12 +65,15 @@ class MarkdownWidgetState extends State<MarkdownWidget> {
 
   ///if the [ScrollDirection] of [ListView] is [ScrollDirection.forward], [isForward] will be true
   bool isForward = true;
+  
+  bool _isDisposed = false;
 
   @override
   void initState() {
     super.initState();
     _tocController = widget.tocController;
     _tocController?.jumpToWidgetIndexCallback = (index) {
+      if (_isDisposed) return;
       controller.scrollToIndex(index, preferPosition: AutoScrollPosition.begin);
     };
     updateState();
@@ -101,9 +104,10 @@ class MarkdownWidgetState extends State<MarkdownWidget> {
 
   @override
   void dispose() {
+    if (_isDisposed) return;
+    _isDisposed = true;
     clearState();
     controller.dispose();
-    _tocController?.jumpToWidgetIndexCallback = null;
     super.dispose();
   }
 
