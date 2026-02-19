@@ -1,5 +1,4 @@
-// ignore: avoid_web_libraries_in_flutter
-import 'dart:html' as html;
+import 'package:web/web.dart';
 import 'platform_detector.dart';
 
 PlatformType get currentType {
@@ -20,8 +19,8 @@ final _iOS = [
 bool isWebIOS() {
   var matches = false;
   _iOS.forEach((name) {
-    if (html.window.navigator.platform?.contains(name) ??
-        false || html.window.navigator.userAgent.contains(name)) {
+    if (window.navigator.platform.contains(name) ||
+        window.navigator.userAgent.contains(name)) {
       matches = true;
     }
   });
@@ -29,5 +28,5 @@ bool isWebIOS() {
 }
 
 bool isWebAndroid() =>
-    html.window.navigator.platform == "Android" ||
-    html.window.navigator.userAgent.contains("Android");
+    window.navigator.platform == "Android" ||
+    window.navigator.userAgent.contains("Android");

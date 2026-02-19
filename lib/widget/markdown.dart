@@ -30,6 +30,8 @@ class MarkdownWidget extends StatefulWidget {
 
   ///config for [MarkdownGenerator]
   final MarkdownGenerator? markdownGenerator;
+  
+  final AutoScrollController? _autoScrollController;
 
   const MarkdownWidget({
     Key? key,
@@ -41,7 +43,8 @@ class MarkdownWidget extends StatefulWidget {
     this.padding,
     this.config,
     this.markdownGenerator,
-  }) : super(key: key);
+    AutoScrollController? autoScrollController
+  }) : _autoScrollController = autoScrollController, super(key: key);
 
   @override
   MarkdownWidgetState createState() => MarkdownWidgetState();
@@ -58,7 +61,7 @@ class MarkdownWidgetState extends State<MarkdownWidget> {
   TocController? _tocController;
 
   ///[AutoScrollController] provides the scroll to index mechanism
-  final AutoScrollController controller = AutoScrollController();
+  late AutoScrollController controller;
 
   ///every [VisibilityDetector]'s child which is visible will be kept with [indexTreeSet]
   final indexTreeSet = SplayTreeSet<int>((a, b) => a - b);
@@ -72,6 +75,7 @@ class MarkdownWidgetState extends State<MarkdownWidget> {
   void initState() {
     super.initState();
     _tocController = widget.tocController;
+    controller = widget._autoScrollController ??  AutoScrollController();
     _tocController?.jumpToWidgetIndexCallback = (index) {
       if (_isDisposed) return;
       controller.scrollToIndex(index, preferPosition: AutoScrollPosition.begin);
