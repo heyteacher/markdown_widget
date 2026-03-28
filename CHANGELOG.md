@@ -1,3 +1,8 @@
+
+### [2.4.0+]
+- 2.4.0+1
+  - Rename in `markdown_widget_flutter_heyteacher` and publish on `pub.dev` the fork `heyteacher/markdown_widget`
+
 ### [2.3.2+]
 - 2.3.2+1
   - Remove the use of `textScaleFactor`
