@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:markdown_widget/config/all.dart';
-import 'package:markdown_widget/widget/span_node.dart';
-import 'package:markdown_widget/widget/widget_visitor.dart';
+import 'package:markdown_widget_flutter_heyteacher/config/all.dart';
+import 'package:markdown_widget_flutter_heyteacher/widget/span_node.dart';
+import 'package:markdown_widget_flutter_heyteacher/widget/widget_visitor.dart';
 import 'package:video_player/video_player.dart';
 
 class VideoNode extends SpanNode {

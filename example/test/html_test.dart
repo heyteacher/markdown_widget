@@ -1,7 +1,7 @@
 import 'package:flutter/src/painting/inline_span.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:markdown/markdown.dart' as m;
-import 'package:markdown_widget/markdown_widget.dart';
+import 'package:markdown_widget_flutter_heyteacher/markdown_widget.dart';
 import 'package:markdown_widget_demo/markdown_custom/custom_node.dart';
 
 class DivNode extends ElementNode {

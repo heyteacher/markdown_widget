@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:markdown/markdown.dart' as m;
-import 'package:markdown_widget/config/configs.dart';
-import 'package:markdown_widget/widget/all.dart';
+import 'package:markdown_widget_flutter_heyteacher/config/configs.dart';
+import 'package:markdown_widget_flutter_heyteacher/widget/all.dart';
 
 import '../config/markdown_generator.dart';
 

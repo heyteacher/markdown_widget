@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'dart:io';
 import 'package:markdown/markdown.dart' as m;
-import 'package:markdown_widget/markdown_widget.dart';
+import 'package:markdown_widget_flutter_heyteacher/markdown_widget.dart';
 import 'package:path/path.dart' as p;
 
 void main() {

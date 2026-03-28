@@ -18,7 +18,7 @@
 
 ```
 import 'package:flutter/material.dart';
-import 'package:markdown_widget/markdown_widget.dart';
+import 'package:markdown_widget_flutter_heyteacher/markdown_widget.dart';
 
 class MarkdownPage extends StatelessWidget {
   final String data;
@@ -174,7 +174,7 @@ import 'package:flutter_highlight/themes/a11y-light.dart';
 以及 [在线Mermaid demo展示](https://asjqkkkk.github.io/markdown_widget/#/sample_mermaid)
 
 ```dart
-import 'package:markdown_widget/markdown_widget.dart';
+import 'package:markdown_widget_flutter_heyteacher/markdown_widget.dart';
 import 'markdown_custom/mermaid.dart';
 
 // 基本用法

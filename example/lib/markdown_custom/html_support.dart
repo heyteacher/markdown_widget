@@ -3,7 +3,7 @@ import 'package:markdown/markdown.dart' as m;
 import 'package:flutter/material.dart';
 import 'package:html/parser.dart';
 import 'package:html/dom_parsing.dart';
-import 'package:markdown_widget/markdown_widget.dart';
+import 'package:markdown_widget_flutter_heyteacher/markdown_widget.dart';
 
 ///see this issue: https://github.com/dart-lang/markdown/issues/284#event-3216258013
 ///use [htmlToMarkdown] to convert HTML in [m.Text] to [m.Node]

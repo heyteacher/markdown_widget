@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:markdown_widget/markdown_widget.dart';
+import 'package:markdown_widget_flutter_heyteacher/markdown_widget.dart';
 
 import '../markdown_custom/latex.dart';
 import '../platform_detector/platform_detector.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:markdown/markdown.dart' as m;
-import 'package:markdown_widget/config/all.dart';
+import 'package:markdown_widget_flutter_heyteacher/config/all.dart';
 
 void main() {
   group('AutolinkNoLeadingSpaceSyntax detailed tests', () {

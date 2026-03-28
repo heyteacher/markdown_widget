@@ -2,7 +2,10 @@
 
 ![screen](https://github.com/asjqkkkk/asjqkkkk.github.io/assets/30992818/4185bf1a-0be3-460d-ba12-9e4764f5c035)
 
-# 📖markdown_widget
+# 📖markdown_widget_flutter_heyteacher
+
+> [!IMPORTANT]
+> this is an unoffical fork of <https://github.com/asjqkkkk/markdown_widget> which contains commits collected in this [pull request](https://github.com/asjqkkkk/markdown_widget/pull/259)
 
 [![Coverage Status](https://coveralls.io/repos/github/asjqkkkk/markdown_widget/badge.svg?branch=dev)](https://coveralls.io/github/asjqkkkk/markdown_widget?branch=dev) [![pub package](https://img.shields.io/pub/v/markdown_widget.svg)](https://pub.dartlang.org/packages/markdown_widget) [![demo](https://img.shields.io/badge/demo-online-brightgreen)](https://asjqkkkk.github.io/markdown_widget/)
 

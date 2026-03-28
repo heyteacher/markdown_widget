@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  markdown_widget:
+  markdown_widget_flutter_heyteacher:
     path: ../
   cupertino_icons: ^1.0.5
   flutter_test:
@@ -28,8 +28,6 @@ dependencies:
   flutter_widget_from_html_core: ^0.15.2
   # for HTTP requests
   http: ^0.13.5
-
-dev_dependencies:
 
 flutter:
 

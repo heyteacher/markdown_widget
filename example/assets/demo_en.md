@@ -19,7 +19,7 @@ Before starting, you can try out the online demo by clicking [demo](https://asjq
 
 ```
 import 'package:flutter/material.dart';
-import 'package:markdown_widget/markdown_widget.dart';
+import 'package:markdown_widget_flutter_heyteacher/markdown_widget.dart';
 
 class MarkdownPage extends StatelessWidget {
   final String data;
@@ -175,7 +175,7 @@ Features:
 Here is the [online Mermaid demo showcase](https://asjqkkkk.github.io/markdown_widget/#/sample_mermaid)
 
 ```dart
-import 'package:markdown_widget/markdown_widget.dart';
+import 'package:markdown_widget_flutter_heyteacher/markdown_widget.dart';
 import 'markdown_custom/mermaid.dart';
 
 // Basic usage
